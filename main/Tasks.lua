@@ -3,15 +3,8 @@
 --[[
 Usage:
 
-Put this into a Script in ServerScriptService:
-and Put This Module in a Folder Nammed __Modules in ServerStorage
-make sure the components exist from line 21 to 23 
-working on making this better
+You can find the Usage in the README!
 
-local ServerStorage = game:GetService("ServerStorage")
-local __Modules = ServerStorage:WaitForChild("__Modules")
-local TasksModule = require(__Modules:WaitForChild("TasksModule"))
-TasksModule.LoadMap()
 ]]
 
 
@@ -20,8 +13,8 @@ local TasksModule = {}
 local ServerStorage = game:GetService("ServerStorage")
 local Workspace = game:GetService("Workspace")
 local UPDATE_HOLDER = ServerStorage:WaitForChild("UPDATE_HOLDER")
-local NEW_MAP = UPDATE_HOLDER:WaitForChild("UPDATE_CTX_MAP")
-local OLD_MAP = ServerStorage:WaitForChild("UPDATE_CTX")
+local NEW_MAP = UPDATE_HOLDER:WaitForChild("UPDATE_OLD_MAP")
+local OLD_MAP = ServerStorage:WaitForChild("UPDATE_NEW_MAP")
 local RunService = game:GetService("RunService"):IsStudio()
 local LOAD_IN_Studio = true
 
